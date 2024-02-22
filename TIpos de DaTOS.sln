@@ -1,25 +1,42 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.9.34616.47
-MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TIpos de DaTOS", "TIpos de DaTOS\TIpos de DaTOS.csproj", "{C8AFECC9-1441-43A0-8F0F-98BDE4458ED2}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C8AFECC9-1441-43A0-8F0F-98BDE4458ED2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8AFECC9-1441-43A0-8F0F-98BDE4458ED2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8AFECC9-1441-43A0-8F0F-98BDE4458ED2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8AFECC9-1441-43A0-8F0F-98BDE4458ED2}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5D33BE00-2927-4799-A940-7EA6C816A3D6}
-	EndGlobalSection
-EndGlobal
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Tipos_de_datos
+{
+    internal class Program
+    {
+
+        public static void Main(string[] args)
+        {
+            {
+                sbyte byteConSigno = sbyte.MaxValue;
+                byte byteSinSingo = byte.MaxValue;
+                short shortConSingo = short.MaxValue;
+                ushort shortSinSingo = ushort.MaxValue;
+                int intConSingo = int.MaxValue;
+                uint intSinSingo = uint.MaxValue;
+                long longConSingo = long.MaxValue;
+                ulong longSinSingo = ulong.MaxValue;
+                float floatValor = float.MaxValue;
+                double doubleValor = double.MaxValue;
+                decimal decimalValor = decimal.MaxValue;
+
+                Console.WriteLine("Max[sbyte]: {0} ", byteConSigno);
+                Console.WriteLine("Max[byte]: {0} ", byteSinSingo);
+                Console.WriteLine("Max[short]: {0} ", shortConSingo);
+                Console.WriteLine("Max[ushort]: {0} ", shortSinSingo);
+                Console.WriteLine("Max[int]: {0} ", intConSingo);
+                Console.WriteLine("Max[uint]: {0} ", intSinSingo);
+                Console.WriteLine("Max[long]: {0} ", longConSingo);
+                Console.WriteLine("Max[ulong]: {0} ", longSinSingo);
+                Console.WriteLine("Max[float]: {0} ", floatValor);
+                Console.WriteLine("Max[double]: {0} ", doubleValor);
+                Console.WriteLine("Max[decimal]: {0} ", decimalValor);
+                Console.ReadLine();
+            }
+        }
+    }
+}
